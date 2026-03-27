@@ -2,11 +2,11 @@
 @import "tw-animate-css";
 
 @theme {
-  --color-navy: #0F172A;
-  --color-navy-deep: #020617;
-  --color-gold: #DC2626;
-  --color-gold-light: #EF4444;
-  --color-cream: #FFFFFF;
+  --color-navy: #1E3A8A; /* BMSCE Outer Ring Blue */
+  --color-navy-deep: #0d1b2a; /* Richer Dark Blue for high contrast */
+  --color-gold: #D32F2F; /* BMSCE Lightning Bolt Red */
+  --color-gold-light: #EF4444; /* Lighter red */
+  --color-cream: #FFFFFF; /* Kept white for contrast */
   --color-cream-dark: #F8FAFC;
   --color-text-dark: #F8FAFC;
   --color-text-mid: #CBD5E1;
