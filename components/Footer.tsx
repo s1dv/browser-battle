@@ -64,7 +64,7 @@ export default function Footer() {
             </div>
             
             <p className="text-navy-deep/60 text-sm font-sans leading-relaxed max-w-sm font-medium">
-              India's first private sector initiative in engineering education. Consistently ranked among the top engineering colleges globally, committed to excellence.
+              India&apos;s first private sector initiative in engineering education. Consistently ranked among the top engineering colleges globally, committed to excellence.
             </p>
 
             <div className="space-y-4 pt-4">

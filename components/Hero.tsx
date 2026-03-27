@@ -42,7 +42,11 @@ export default function Hero() {
   }, []);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
+  }, []);
+
+  useEffect(() => {
     const timer = setInterval(nextSlide, 8000);
     return () => clearInterval(timer);
   }, [nextSlide]);
