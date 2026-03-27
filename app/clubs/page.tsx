@@ -43,8 +43,8 @@ export default function ClubsPage() {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-[#FAFAFA] overflow-hidden border-b border-navy-deep/5">
-        <div className="absolute inset-0 bg-[url('/guitar.jpg')] bg-cover bg-center opacity-15 blur-[2px]"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#FAFAFA]/50 via-[#FAFAFA]/80 to-[#FAFAFA] z-10"></div>
+        <div className="absolute inset-0 bg-[url('/guitar.jpg')] bg-cover bg-center opacity-40"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/60 to-white/90 z-10"></div>
         <div className="relative z-20 max-w-[1280px] mx-auto px-6 text-center">
           <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-gold/10 border border-gold/20 mb-6 mt-10">
             <span className="font-sans text-[10px] text-gold uppercase tracking-[0.3em] font-bold">Student Clubs</span>

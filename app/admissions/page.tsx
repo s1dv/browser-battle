@@ -11,8 +11,8 @@ export default function AdmissionsPage() {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-[#FAFAFA] overflow-hidden border-b border-navy-deep/5">
-        <div className="absolute inset-0 bg-[url('/pj_block.jpg')] bg-cover bg-center opacity-15 blur-[2px]"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#FAFAFA]/50 via-[#FAFAFA]/80 to-[#FAFAFA] z-10"></div>
+        <div className="absolute inset-0 bg-[url('/pj_block.jpg')] bg-cover bg-center opacity-40"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/60 to-white/90 z-10"></div>
         <div className="relative z-20 max-w-[1280px] mx-auto px-6 text-center">
           <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-gold/10 border border-gold/20 mb-6 mt-10">
             <span className="font-sans text-[10px] text-gold uppercase tracking-[0.3em] font-bold">Admissions</span>
@@ -73,6 +73,31 @@ export default function AdmissionsPage() {
                 <p className="text-sm text-navy-deep/60">{s.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Fee Structure */}
+      <section className="py-24 bg-white border-t border-navy-deep/5">
+        <div className="max-w-[1280px] mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-navy-deep">Fee Structure</h2>
+            <div className="w-16 h-1 bg-gold mx-auto mt-6"></div>
+          </div>
+          <div className="bg-[#F4F6F9] rounded-2xl p-8 md:p-12 text-center max-w-4xl mx-auto border border-navy-deep/5">
+            <BookMarked className="w-12 h-12 text-gold mx-auto mb-6" />
+            <h3 className="font-sans text-2xl font-bold text-navy-deep mb-4">Transparent & Accessible Education</h3>
+            <p className="text-navy-deep/70 mb-8 leading-relaxed font-medium">
+              BMSCE follows the fee structure prescribed by the Government of Karnataka and regulatory bodies. Fees vary based on the admission quota (CET, COMEDK, Management, NRI/Foreign) and the targeted program. We are committed to recognizing merit, with extensive financial aid and scholarship options available for eligible students.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <button className="bg-navy-deep text-white px-8 py-3 rounded-full font-sans text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-gold transition-colors shadow-md">
+                Download Fee Details
+              </button>
+              <button className="bg-white text-navy-deep border border-navy-deep/10 px-8 py-3 rounded-full font-sans text-[11px] font-bold uppercase tracking-[0.2em] hover:border-gold transition-colors shadow-sm">
+                View Scholarships
+              </button>
+            </div>
           </div>
         </div>
       </section>

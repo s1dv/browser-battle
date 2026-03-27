@@ -165,31 +165,25 @@ export default function Navbar() {
             </motion.div>
           ))}
           
-          <motion.div variants={itemVariants} className="relative h-[80px] flex items-center group">
-             <Link
-                href="/contact"
-                className="flex items-center space-x-1 font-sans text-[11px] font-bold text-navy-deep uppercase tracking-[0.15em] relative py-2"
-              >
-                <span>Get in Touch</span>
-                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-gold scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
-             </Link>
-          </motion.div>
+
         </motion.div>
 
         {/* Right Action - Right Aligned */}
         <div className="flex-1 hidden lg:flex items-center justify-end space-x-6">
-          <motion.button 
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.8 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="relative overflow-hidden bg-navy-deep text-white px-8 py-3 font-sans text-[11px] font-bold uppercase tracking-[0.2em] rounded-full shadow-lg hover:shadow-navy-deep/20 transition-all duration-300 group"
-          >
-            <span className="relative z-10 group-hover:text-gold transition-colors duration-300">Apply Now</span>
-            {/* Ripple effect trick using absolute scale */}
-            <div className="absolute inset-0 bg-white/10 origin-center scale-0 group-hover:scale-150 transition-transform duration-500 rounded-full blur-md"></div>
-          </motion.button>
+          <Link href="/apply">
+            <motion.button 
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.8 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="relative overflow-hidden bg-navy-deep text-white px-8 py-3 font-sans text-[11px] font-bold uppercase tracking-[0.2em] rounded-full shadow-lg hover:shadow-navy-deep/20 transition-all duration-300 group"
+            >
+              <span className="relative z-10 group-hover:text-gold transition-colors duration-300">Apply Now</span>
+              {/* Ripple effect trick using absolute scale */}
+              <div className="absolute inset-0 bg-white/10 origin-center scale-0 group-hover:scale-150 transition-transform duration-500 rounded-full blur-md"></div>
+            </motion.button>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -235,7 +229,8 @@ export default function Navbar() {
                 </div>
               ))}
               <Link
-                href="/admissions"
+                href="/apply"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="block text-center w-full bg-navy-deep text-white rounded-full py-4 font-sans text-[11px] uppercase tracking-[0.2em] font-bold shadow-lg mt-6"
               >
                 Apply Now

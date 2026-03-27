@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowUpRight, Hospital, BookOpen, Home, Server, Dumbbell, Heart, Users, Globe } from 'lucide-react';
+import Image from 'next/image';
 
 const facilities = [
   { icon: Hospital, name: "BMS Hospital", desc: "On-campus healthcare for students and staff." },
@@ -41,7 +42,7 @@ export default function Facilities() {
           </button>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {facilities.map((fac, idx) => (
             <motion.div
               key={fac.name}
@@ -63,6 +64,21 @@ export default function Facilities() {
             </motion.div>
           ))}
         </div>
+
+        <motion.div 
+           initial={{ opacity: 0, scale: 0.98 }}
+           whileInView={{ opacity: 1, scale: 1 }}
+           viewport={{ once: true }}
+           className="mt-16 rounded-3xl overflow-hidden relative h-[400px] border border-navy-deep/5 shadow-sm group glass-card"
+        >
+          <Image src="/indoor_stadium.png" alt="Indoor Stadium" fill className="object-cover transition-transform duration-1000 group-hover:scale-105" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-navy-deep/20 to-transparent flex items-end p-10">
+            <div className="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+               <h3 className="font-sans text-3xl font-black text-white group-hover:text-gold transition-colors uppercase tracking-widest">BMSCE Indoor Stadium</h3>
+               <p className="text-sm opacity-80 font-sans mt-2 font-medium max-w-xl">State-of-the-art sports complex equipped for multiple indoor games, fitness, and large gatherings.</p>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

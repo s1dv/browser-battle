@@ -4,6 +4,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const slides = [
   {
@@ -19,18 +20,10 @@ const slides = [
     line2: "Discovery",
     sub: "Across 20+ Research Centers",
     body: "Our commitment to research and development has led to groundbreaking discoveries and a culture of continuous learning."
-  },
-  {
-    pill: "Placements 2024–25",
-    line1: "Limitless",
-    line2: "Careers",
-    sub: "#1 in Placements",
-    body: "Connecting our talented students with global industry leaders, ensuring a bright and successful future for every graduate."
   }
 ];
 
 const stats = [
-  { value: "78+", label: "Years of Excellence" },
   { value: "A++", label: "NAAC Rating" },
   { value: "250+", label: "Recruiting Partners" },
   { value: "83rd", label: "NIRF 2022 Rank" }
@@ -55,11 +48,24 @@ export default function Hero() {
   }, [nextSlide]);
 
   return (
-    <section className="relative min-h-[100vh] bg-[#FAFAFA] overflow-hidden flex items-center pt-24 border-b border-navy-deep/5">
-      {/* Background Soft Blobs/Particles */}
-      <div className="absolute top-10 left-10 w-[400px] h-[400px] bg-blue-200/40 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float-slow"></div>
-      <div className="absolute top-40 right-20 w-[300px] h-[300px] bg-red-200/40 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float-slower"></div>
-      <div className="absolute -bottom-20 left-1/3 w-[500px] h-[500px] bg-yellow-200/40 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float-slow"></div>
+    <section className="relative min-h-[100vh] bg-white overflow-hidden flex items-center pt-24 border-b border-navy-deep/5">
+      {/* Background Hero Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/pj_block.jpg"
+          alt="BMSCE PJ Block"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Glassmorphic Light Overlay */}
+        <div className="absolute inset-0 bg-white/80 backdrop-blur-[2px]"></div>
+      </div>
+
+      {/* Background Soft Blobs/Particles (Now overlaid on the image) */}
+      <div className="absolute z-0 top-10 left-10 w-[400px] h-[400px] bg-blue-200/40 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float-slow"></div>
+      <div className="absolute z-0 top-40 right-20 w-[300px] h-[300px] bg-red-200/40 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float-slower"></div>
+      <div className="absolute z-0 -bottom-20 left-1/3 w-[500px] h-[500px] bg-yellow-200/40 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float-slow"></div>
 
       <div className="max-w-[1440px] mx-auto px-6 lg:px-10 w-full grid lg:grid-cols-2 gap-12 items-center relative z-20">
         {/* Left Content */}
@@ -110,20 +116,22 @@ export default function Hero() {
                 {slides[currentSlide].body}
               </motion.p>
 
-              <motion.div 
-                variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
-                className="flex flex-wrap gap-6 pt-6"
-              >
-                <motion.button 
-                  whileHover={{ scale: 1.05 }} 
-                  whileTap={{ scale: 0.95 }}
-                  className="group bg-gold text-navy-deep px-10 py-5 rounded-full font-sans font-bold flex items-center space-x-3 transition-colors shadow-2xl animate-pulse-glow uppercase tracking-[0.15em] text-[12px] relative overflow-hidden"
+                <motion.div 
+                  variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+                  className="flex flex-wrap gap-6 pt-6"
                 >
-                  <span className="relative z-10">Explore Programs</span>
-                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform relative z-10" />
-                  <div className="absolute inset-0 bg-white/30 scale-0 group-hover:scale-150 transition-transform duration-500 rounded-full blur-md"></div>
-                </motion.button>
-              </motion.div>
+                  <Link href="/academics">
+                    <motion.button 
+                      whileHover={{ scale: 1.05 }} 
+                      whileTap={{ scale: 0.95 }}
+                      className="group bg-gold text-navy-deep px-10 py-5 rounded-full font-sans font-bold flex items-center space-x-3 transition-colors shadow-2xl animate-pulse-glow uppercase tracking-[0.15em] text-[12px] relative overflow-hidden"
+                    >
+                      <span className="relative z-10">Explore Programs</span>
+                      <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform relative z-10" />
+                      <div className="absolute inset-0 bg-white/30 scale-0 group-hover:scale-150 transition-transform duration-500 rounded-full blur-md"></div>
+                    </motion.button>
+                  </Link>
+                </motion.div>
             </motion.div>
           </AnimatePresence>
           

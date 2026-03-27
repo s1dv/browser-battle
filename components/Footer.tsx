@@ -4,32 +4,33 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Youtube, ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const footerLinks = [
   {
     title: "Admissions",
     links: [
-      { name: "UG Programs", href: "#" },
-      { name: "PG Programs", href: "#" },
-      { name: "Ph.D Programs", href: "#" },
-      { name: "Fee Structure", href: "#" }
+      { name: "UG Programs", href: "/admissions/ug" },
+      { name: "PG Programs", href: "/admissions/pg" },
+      { name: "Ph.D Programs", href: "/admissions/phd" },
+      { name: "Fee Structure", href: "/admissions" }
     ]
   },
   {
     title: "Important",
     links: [
-      { name: "NIRF Data", href: "#" },
-      { name: "NAAC SSR", href: "#" },
-      { name: "Mandatory Disclosure", href: "#" },
-      { name: "IQAC", href: "#" }
+      { name: "NIRF Data", href: "/documents" },
+      { name: "NAAC SSR", href: "/documents" },
+      { name: "Mandatory Disclosure", href: "/documents" },
+      { name: "IQAC", href: "/about" }
     ]
   },
   {
     title: "Quick Links",
     links: [
-      { name: "Student Portal", href: "#" },
-      { name: "Alumni Association", href: "#" },
-      { name: "Careers", href: "#" },
+      { name: "Apply Now", href: "/apply" },
+      { name: "Alumni Association", href: "/clubs" },
+      { name: "Careers", href: "/about" },
       { name: "Contact Us", href: "/contact" }
     ]
   }
@@ -49,9 +50,13 @@ export default function Footer() {
           {/* Brand Block */}
           <div className="lg:col-span-2 space-y-8">
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 rounded-full bg-navy-deep flex items-center justify-center font-serif text-2xl font-black text-white shadow-xl">
-                BMS
-              </div>
+              <Image 
+                src="/bmsce_logo.png" 
+                alt="BMSCE Logo" 
+                width={64} 
+                height={64} 
+                className="drop-shadow-lg" 
+              />
               <div>
                 <h2 className="font-sans text-2xl font-black leading-tight text-navy-deep">B.M.S. College of <br />Engineering</h2>
                 <p className="font-sans text-[10px] text-navy-deep/50 uppercase tracking-[0.2em] font-bold mt-1">Autonomous Institute · Est. 1946</p>

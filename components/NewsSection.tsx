@@ -136,16 +136,7 @@ export default function NewsEvents() {
               ))}
             </div>
 
-            <div className="p-6 bg-[#F8FAFC] border-t border-navy-deep/5">
-               <motion.button 
-                 whileHover={{ scale: 1.02 }}
-                 whileTap={{ scale: 0.98 }}
-                 className="w-full bg-navy-deep text-white rounded-xl py-4 font-sans text-[10px] uppercase tracking-[0.2em] font-bold shadow-md flex items-center justify-center space-x-2 group hover:bg-gold hover:text-navy-deep transition-colors"
-               >
-                 <span>Access Portal</span>
-                 <ArrowUpRight size={14} className="group-hover:translate-x-1 transition-transform" />
-               </motion.button>
-            </div>
+
           </motion.div>
         </div>
       </div>

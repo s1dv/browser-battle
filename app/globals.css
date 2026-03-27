@@ -12,7 +12,7 @@
   --color-text-mid: #CBD5E1;
   --color-text-light: #94A3B8;
 
-  --font-serif: "Times New Roman", Times, serif;
+  --font-serif: var(--font-playfair), "Times New Roman", Times, serif;
   --font-gothic: var(--font-sans);
   --font-sans: var(--font-sans);
   --font-mono: "JetBrains Mono", monospace;
@@ -20,7 +20,11 @@
 
 @layer base {
   body {
-    @apply bg-navy-deep text-text-dark font-serif;
+    @apply bg-white text-navy-deep font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight;
   }
 }
 

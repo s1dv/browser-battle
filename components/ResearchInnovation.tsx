@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowUpRight, Rocket, Layers, FlaskConical, Cpu, Lightbulb, Microscope } from 'lucide-react';
+import Image from 'next/image';
 
 const stats = [
   { value: "100+", label: "Patents Filed" },
@@ -99,7 +100,11 @@ export default function Research() {
           className="bg-[#F8FAFC] rounded-3xl border border-navy-deep/5 p-10 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-12 relative overflow-hidden group shadow-sm"
         >
           <div className="absolute top-0 left-0 w-2 h-full bg-gold" />
-          <div className="absolute -right-10 top-1/2 -translate-y-1/2 font-sans text-[12rem] font-black text-navy-deep/5 select-none pointer-events-none group-hover:scale-105 transition-transform duration-1000">
+          <div className="absolute top-0 right-0 w-1/2 h-full opacity-20 lg:opacity-40 pointer-events-none mix-blend-multiply">
+            <Image src="/lab.png" alt="Research Lab" fill className="object-cover object-center" />
+            <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#F8FAFC] z-10"></div>
+          </div>
+          <div className="absolute -right-10 top-1/2 -translate-y-1/2 font-sans text-[12rem] font-black text-navy-deep/5 select-none pointer-events-none group-hover:scale-105 transition-transform duration-1000 z-0">
             CIIE
           </div>
           <div className="space-y-5 max-w-3xl relative z-10">
