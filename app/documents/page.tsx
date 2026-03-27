@@ -50,13 +50,14 @@ export default function DocumentsPage() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-navy-deep overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://picsum.photos/seed/docs/1920/1080')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+      <section className="relative pt-32 pb-20 bg-[#FAFAFA] overflow-hidden border-b border-navy-deep/5">
+        <div className="absolute inset-0 bg-[url('/pj_block.jpg')] bg-cover bg-center opacity-15 blur-[2px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#FAFAFA]/50 via-[#FAFAFA]/80 to-[#FAFAFA] z-10"></div>
         <div className="relative z-20 max-w-[1280px] mx-auto px-6 text-center">
-          <h1 className="font-serif font-black text-cream text-5xl md:text-7xl mb-6 tracking-tighter">
+          <h1 className="font-serif font-black text-navy-deep text-5xl md:text-7xl mb-6 tracking-tighter drop-shadow-sm">
             Official <span className="text-gold italic">Documents</span>
           </h1>
-          <p className="max-w-2xl mx-auto text-cream/70 font-sans text-lg">
+          <p className="max-w-2xl mx-auto text-navy-deep/80 font-sans text-lg font-medium">
             Access institutional reports, accreditations, mandatory disclosures, and quality assurance records.
           </p>
         </div>

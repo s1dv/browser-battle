@@ -9,25 +9,25 @@ const testimonials = [
     name: "Rohan K.",
     role: "Alumni, Batch of 2022",
     quote: "My experience at BMSCE was transformative. The hands-on labs and the incredible faculty guidance completely shaped my career path in software engineering.",
-    avatar: "https://picsum.photos/seed/a1/100/100"
+    avatar: "/lab.png"
   },
   {
     name: "Mrs. Anjali Sharma",
     role: "Parent of Grade 10 Student",
     quote: "Seeing the infrastructure and the level of personalized attention students receive here gives me immense peace of mind as a parent. Truly world-class.",
-    avatar: "https://picsum.photos/seed/a2/100/100"
+    avatar: "/comp.jpg"
   },
   {
     name: "Dr. Vikram S.",
     role: "Industry Partner",
     quote: "We have recruited hundreds of students from BMSCE over the past decade. The technical rigor and leadership qualities they possess are unmatched.",
-    avatar: "https://picsum.photos/seed/a3/100/100"
+    avatar: "/indoor_stadium.png"
   },
   {
     name: "Meera Reddy",
     role: "Current Student (ECE)",
     quote: "The vibrant campus life and the countless opportunities to participate in research projects make every single day exciting and fulfilling.",
-    avatar: "https://picsum.photos/seed/a4/100/100"
+    avatar: "/guitar.jpg"
   }
 ];
 

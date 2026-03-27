@@ -6,10 +6,10 @@ import { motion } from 'motion/react';
 import { MapPin, Navigation, PlayCircle, ArrowRight } from 'lucide-react';
 
 const locations = [
-  { name: 'Main Academic Block', type: 'Academic', image: 'https://picsum.photos/seed/academic/400/300' },
-  { name: 'B.S. Narayan Hall', type: 'Auditorium', image: 'https://picsum.photos/seed/hall/400/300' },
-  { name: 'Central Library', type: 'Support', image: 'https://picsum.photos/seed/lib/400/300' },
-  { name: 'Sports Complex', type: 'Wellness', image: 'https://picsum.photos/seed/sports-bms/400/300' },
+  { name: 'Main Academic Block', type: 'Academic', image: '/pj_block.jpg' },
+  { name: 'B.S. Narayan Hall', type: 'Auditorium', image: '/comp.jpg' },
+  { name: 'Central Library', type: 'Support', image: '/sids_crush.jpg' },
+  { name: 'Sports Complex', type: 'Wellness', image: '/indoor_stadium.png' },
 ];
 
 export default function CampusExperience() {

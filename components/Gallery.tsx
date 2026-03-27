@@ -49,7 +49,7 @@ export default function Gallery() {
              className="md:col-span-2 md:row-span-2 relative h-[400px] md:h-auto overflow-hidden group rounded-3xl shadow-sm border border-navy-deep/5"
           >
             <Image
-              src="https://picsum.photos/seed/bmsce-campus/1200/800"
+              src="/pj_block.jpg"
               alt="BMSCE Campus"
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -70,7 +70,7 @@ export default function Gallery() {
              className="relative h-[250px] overflow-hidden group rounded-3xl shadow-sm border border-navy-deep/5"
           >
             <Image
-              src="https://picsum.photos/seed/bmsce-lab/600/400"
+              src="/lab.png"
               alt="BMSCE Lab"
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-110"
@@ -85,7 +85,7 @@ export default function Gallery() {
              className="relative h-[250px] overflow-hidden group rounded-3xl shadow-sm border border-navy-deep/5"
           >
             <Image
-              src="https://picsum.photos/seed/bmsce-students/600/400"
+              src="/indoor_stadium.png"
               alt="BMSCE Students"
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-110"
@@ -100,7 +100,7 @@ export default function Gallery() {
              className="md:col-span-2 relative h-[250px] overflow-hidden group rounded-3xl shadow-sm border border-navy-deep/5"
           >
             <Image
-              src="https://picsum.photos/seed/bmsce-event/1200/400"
+              src="/comp.jpg"
               alt="BMSCE Event"
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-110 group-hover:-translate-y-2"

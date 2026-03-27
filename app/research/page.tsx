@@ -10,17 +10,17 @@ export default function ResearchPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-navy-deep overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://picsum.photos/seed/research/1920/1080')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-deep via-navy-deep/90 to-navy-deep z-10"></div>
+      <section className="relative pt-32 pb-20 bg-[#FAFAFA] overflow-hidden border-b border-navy-deep/5">
+        <div className="absolute inset-0 bg-[url('/comp.jpg')] bg-cover bg-center opacity-15 blur-[2px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#FAFAFA]/50 via-[#FAFAFA]/80 to-[#FAFAFA] z-10"></div>
         <div className="relative z-20 max-w-[1280px] mx-auto px-6 text-center">
           <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-gold/10 border border-gold/20 mb-6 mt-10">
             <span className="font-sans text-[10px] text-gold uppercase tracking-[0.3em] font-bold">Research & Development</span>
           </div>
-          <h1 className="font-serif font-black text-cream text-5xl md:text-7xl mb-6 tracking-tighter">
+          <h1 className="font-serif font-black text-navy-deep text-5xl md:text-7xl mb-6 tracking-tighter drop-shadow-sm">
             Pioneering <span className="text-gold italic">Discoveries</span>
           </h1>
-          <p className="max-w-2xl mx-auto text-cream/70 font-sans text-lg leading-relaxed">
+          <p className="max-w-2xl mx-auto text-navy-deep/80 font-sans text-lg leading-relaxed font-medium">
             Leading the frontier of innovation through state-of-the-art research centers, funded projects, and impactful global publications.
           </p>
         </div>
@@ -69,8 +69,8 @@ export default function ResearchPage() {
             </button>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <div className="aspect-square bg-[url('https://picsum.photos/seed/lab1/600/600')] bg-cover bg-center rounded-sm grayscale hover:grayscale-0 transition-all duration-500"></div>
-            <div className="aspect-square bg-[url('https://picsum.photos/seed/lab2/600/600')] bg-cover bg-center rounded-sm mt-8 grayscale hover:grayscale-0 transition-all duration-500"></div>
+            <div className="aspect-square bg-[url('/lab.png')] bg-cover bg-center rounded-sm grayscale hover:grayscale-0 transition-all duration-500"></div>
+            <div className="aspect-square bg-[url('/pj_block.jpg')] bg-cover bg-center rounded-sm mt-8 grayscale hover:grayscale-0 transition-all duration-500"></div>
           </div>
         </div>
       </section>
@@ -141,7 +141,7 @@ export default function ResearchPage() {
       </section>
 
       <section id="innovation" className="py-32 bg-navy-deep text-cream scroll-mt-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://picsum.photos/seed/innovation/1920/1080')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+        <div className="absolute inset-0 bg-[url('/indoor_stadium.png')] bg-cover bg-center opacity-10 mix-blend-overlay grayscale"></div>
         <div className="max-w-[1280px] mx-auto px-6 text-center relative z-10">
           <Zap className="w-16 h-16 text-gold mx-auto mb-6" />
           <h2 className="font-serif text-5xl md:text-6xl font-black mb-6 tracking-tighter">Innovation & CIIE</h2>

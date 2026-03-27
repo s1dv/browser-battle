@@ -13,17 +13,17 @@ export default function InnovationPage() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-navy-deep overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://picsum.photos/seed/innovation/1920/1080')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-deep via-navy-deep/90 to-navy-deep z-10"></div>
+      <section className="relative pt-32 pb-20 bg-[#FAFAFA] overflow-hidden border-b border-navy-deep/5">
+        <div className="absolute inset-0 bg-[url('/lab.png')] bg-cover bg-center opacity-15 blur-[2px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#FAFAFA]/50 via-[#FAFAFA]/80 to-[#FAFAFA] z-10"></div>
         <div className="relative z-20 max-w-[1280px] mx-auto px-6 text-center">
           <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-gold/10 border border-gold/20 mb-6 mt-10">
             <span className="font-sans text-[10px] text-gold uppercase tracking-[0.3em] font-bold">Research & Innovation</span>
           </div>
-          <h1 className="font-serif font-black text-cream text-5xl md:text-7xl mb-6 tracking-tighter">
+          <h1 className="font-serif font-black text-navy-deep text-5xl md:text-7xl mb-6 tracking-tighter drop-shadow-sm">
             Centre for <span className="text-gold italic">Innovation</span>
           </h1>
-          <p className="max-w-3xl mx-auto text-cream/80 font-sans text-lg leading-relaxed text-justify">
+          <p className="max-w-3xl mx-auto text-navy-deep/80 font-sans text-lg leading-relaxed text-justify font-medium">
             {paragraphs[0] || 'Empowering the next generation of entrepreneurs and innovators through incubation, funding, and mentorship.'}
           </p>
         </div>
@@ -63,9 +63,9 @@ export default function InnovationPage() {
             </button>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <div className="aspect-square bg-[url('https://picsum.photos/seed/lab1/600/600')] bg-cover rounded-tl-3xl"></div>
-            <div className="aspect-square bg-[url('https://picsum.photos/seed/lab2/600/600')] bg-cover rounded-tr-3xl"></div>
-            <div className="aspect-square bg-[url('https://picsum.photos/seed/lab3/600/600')] bg-cover rounded-bl-3xl"></div>
+            <div className="aspect-square bg-[url('/comp.jpg')] bg-cover rounded-tl-3xl grayscale"></div>
+            <div className="aspect-square bg-[url('/lab.png')] bg-cover rounded-tr-3xl grayscale"></div>
+            <div className="aspect-square bg-[url('/pj_block.jpg')] bg-cover rounded-bl-3xl grayscale"></div>
             <div className="aspect-square bg-navy-deep text-cream p-6 flex flex-col justify-end rounded-br-3xl">
               <span className="font-serif text-5xl font-bold text-gold mb-2">20+</span>
               <span className="font-sans text-sm tracking-wider uppercase opacity-80">Startups Incubated</span>

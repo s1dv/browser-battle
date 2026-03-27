@@ -10,15 +10,15 @@ import Image from 'next/image';
 const categories = ["All", "Campus", "Academic", "Events", "Sports"];
 
 const images = [
-  { id: 1, src: "https://picsum.photos/seed/bms1/800/600", category: "Campus", title: "Main Academic Block", date: "Present" },
-  { id: 2, src: "https://picsum.photos/seed/bms2/600/800", category: "Events", title: "Utsav Cultural Fest", date: "Mar 2025" },
-  { id: 3, src: "https://picsum.photos/seed/bms3/800/800", category: "Academic", title: "Propel Innovation Lab", date: "Aug 2024" },
-  { id: 4, src: "https://picsum.photos/seed/bms4/600/400", category: "Sports", title: "Inter-college Basketball", date: "Jan 2025" },
-  { id: 5, src: "https://picsum.photos/seed/bms5/800/1000", category: "Events", title: "Phase Shift Tech Fest", date: "Sep 2024" },
-  { id: 6, src: "https://picsum.photos/seed/bms6/1000/600", category: "Campus", title: "Central Library", date: "Present" },
-  { id: 7, src: "https://picsum.photos/seed/bms7/600/600", category: "Academic", title: "Graduation Ceremony", date: "Jul 2024" },
-  { id: 8, src: "https://picsum.photos/seed/bms8/800/400", category: "Campus", title: "Student Hostels", date: "Present" },
-  { id: 9, src: "https://picsum.photos/seed/bms9/600/800", category: "Sports", title: "Annual Athletic Meet", date: "Dec 2024" }
+  { id: 1, src: "/pj_block.jpg", category: "Campus", title: "Main Academic Block", date: "Present" },
+  { id: 2, src: "/guitar.jpg", category: "Events", title: "Utsav Cultural Fest", date: "Mar 2025" },
+  { id: 3, src: "/lab.png", category: "Academic", title: "Propel Innovation Lab", date: "Aug 2024" },
+  { id: 4, src: "/indoor_stadium.png", category: "Sports", title: "Inter-college Basketball", date: "Jan 2025" },
+  { id: 5, src: "/comp.jpg", category: "Events", title: "Phase Shift Tech Fest", date: "Sep 2024" },
+  { id: 6, src: "/pj_block.jpg", category: "Campus", title: "Central Library", date: "Present" },
+  { id: 7, src: "/sids_crush.jpg", category: "Academic", title: "Graduation Ceremony", date: "Jul 2024" },
+  { id: 8, src: "/reference.webp", category: "Campus", title: "Student Hostels", date: "Present" },
+  { id: 9, src: "/ball.webp", category: "Sports", title: "Annual Athletic Meet", date: "Dec 2024" }
 ];
 
 export default function GalleryPage() {

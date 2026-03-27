@@ -13,17 +13,17 @@ export default function TeqipPage() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-navy-deep overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://picsum.photos/seed/teqip/1920/1080')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-deep via-navy-deep/95 to-navy-deep z-10"></div>
+      <section className="relative pt-32 pb-20 bg-[#FAFAFA] overflow-hidden border-b border-navy-deep/5">
+        <div className="absolute inset-0 bg-[url('/pj_block.jpg')] bg-cover bg-center opacity-15 blur-[2px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#FAFAFA]/50 via-[#FAFAFA]/80 to-[#FAFAFA] z-10"></div>
         <div className="relative z-20 max-w-[1280px] mx-auto px-6 text-center">
           <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-gold/10 border border-gold/20 mb-6 mt-10">
             <span className="font-sans text-[10px] text-gold uppercase tracking-[0.3em] font-bold">World Bank Funded</span>
           </div>
-          <h1 className="font-serif font-black text-cream text-5xl md:text-7xl mb-6 tracking-tighter">
+          <h1 className="font-serif font-black text-navy-deep text-5xl md:text-7xl mb-6 tracking-tighter drop-shadow-sm">
             TEQIP <span className="text-gold italic">Initiatives</span>
           </h1>
-          <p className="max-w-3xl mx-auto text-cream/70 font-sans text-lg leading-relaxed text-justify">
+          <p className="max-w-3xl mx-auto text-navy-deep/80 font-sans text-lg leading-relaxed text-justify font-medium">
             BMSCE has successfully participated in Technical Education Quality Improvement Programme (TEQIP) Phases I, II, and III, significantly boosting the quality of technical education and infrastructure.
           </p>
         </div>
