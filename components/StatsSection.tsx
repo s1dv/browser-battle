@@ -15,7 +15,6 @@ const counters = [
   { value: 78, label: "Years of Legacy", sub: "Shaping Engineers", suffix: "+" },
   { value: 13, label: "UG Programs", sub: "Conventional & Emerging" },
   { value: 16, label: "PG Programs", sub: "Specialized Learning" },
-  { value: 250, label: "Recruiters", sub: "Top Global Firms", suffix: "+" },
   { value: 83, label: "NIRF Rank", sub: "Among India's Best", suffix: "rd" }
 ];
 
@@ -126,7 +125,7 @@ export default function StatsAccreditations() {
           <div className="relative z-10">
             <h4 className="text-navy-deep font-sans text-2xl font-black mb-3">Times Engineering Survey Recognition</h4>
             <p className="text-navy-deep/60 font-sans text-sm leading-relaxed max-w-3xl font-medium">
-              Consistently ranked among the elite institutions in India. <span className="text-navy-deep font-black">8th</span> among Top 140 Engineering Institutes and <span className="text-gold font-bold underline underline-offset-4 decoration-2">#1 for Placement Excellence</span> nationwide.
+              Consistently ranked among the elite institutions in India. <span className="text-navy-deep font-black">8th</span> among Top 140 Engineering Institutes nationwide.
             </p>
           </div>
           <motion.button 

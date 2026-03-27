@@ -2,17 +2,17 @@
 @import "tw-animate-css";
 
 @theme {
-  --color-navy: #1E3A8A; /* BMSCE Outer Ring Blue */
-  --color-navy-deep: #0d1b2a; /* Richer Dark Blue for high contrast */
-  --color-gold: #D32F2F; /* BMSCE Lightning Bolt Red */
-  --color-gold-light: #EF4444; /* Lighter red */
-  --color-cream: #FFFFFF; /* Kept white for contrast */
-  --color-cream-dark: #F8FAFC;
-  --color-text-dark: #F8FAFC;
+  --color-navy: #22577A; /* New Blue */
+  --color-navy-deep: #22577A; /* New Blue */
+  --color-gold: #FB3640; /* New Red */
+  --color-gold-light: #ff6b72;
+  --color-cream: #F8F7F2; /* Warm White */
+  --color-cream-dark: #E8E7E2;
+  --color-text-dark: #F8F7F2;
   --color-text-mid: #CBD5E1;
   --color-text-light: #94A3B8;
 
-  --font-serif: "Times New Roman", Times, serif;
+  --font-serif: var(--font-playfair), "Times New Roman", Times, serif;
   --font-gothic: var(--font-sans);
   --font-sans: var(--font-sans);
   --font-mono: "JetBrains Mono", monospace;
@@ -20,7 +20,11 @@
 
 @layer base {
   body {
-    @apply bg-navy-deep text-text-dark font-serif;
+    @apply bg-cream text-navy-deep font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight;
   }
 }
 
@@ -92,6 +96,7 @@
   background-size: 200% 100%;
   animation: shimmer 3s infinite linear;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

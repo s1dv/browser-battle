@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Cpu, Building2, Cog, Radio, Zap, Database, Globe, FlaskConical, Microscope, Plane } from 'lucide-react';
+import Link from 'next/link';
 
 const departments = [
   { code: "CE", name: "Civil Engineering", programs: "B.E · M.Tech", est: "1946", icon: Building2 },
@@ -46,38 +47,39 @@ export default function Departments() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {departments.map((dept, idx) => (
-            <motion.div
-              key={dept.code}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ delay: idx * 0.05, duration: 0.5 }}
-              className="group bg-[#F8FAFC] p-8 rounded-3xl relative overflow-hidden transition-all duration-500 hover:bg-white cursor-pointer hover:-translate-y-2 hover:shadow-2xl hover:shadow-gold/10 border border-navy-deep/5"
-            >
-              <div className="relative z-10 flex flex-col h-full justify-between space-y-8">
-                <div className="flex justify-between items-start">
-                  <div className="w-14 h-14 rounded-xl bg-white border border-navy-deep/5 shadow-sm flex items-center justify-center group-hover:bg-gold transition-colors duration-500">
-                    <dept.icon size={24} className="text-navy-deep group-hover:text-white transition-colors duration-500" />
+            <Link key={dept.code} href={`/departments/${dept.code.toLowerCase()}`} className="block">
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ delay: idx * 0.05, duration: 0.5 }}
+                className="group h-full bg-[#F8FAFC] p-8 rounded-3xl relative overflow-hidden transition-all duration-500 hover:bg-white cursor-pointer hover:-translate-y-2 hover:shadow-2xl hover:shadow-gold/10 border border-navy-deep/5"
+              >
+                <div className="relative z-10 flex flex-col h-full justify-between space-y-8">
+                  <div className="flex justify-between items-start">
+                    <div className="w-14 h-14 rounded-xl bg-white border border-navy-deep/5 shadow-sm flex items-center justify-center group-hover:bg-gold transition-colors duration-500">
+                      <dept.icon size={24} className="text-navy-deep group-hover:text-white transition-colors duration-500" />
+                    </div>
+                    <ArrowRight size={20} className="text-gold opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0" />
                   </div>
-                  <ArrowRight size={20} className="text-gold opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0" />
-                </div>
 
-                <div>
-                  <div className="font-sans text-[10px] text-navy-deep/40 uppercase tracking-[0.3em] font-bold mb-2">{dept.code}</div>
-                  <h3 className="font-sans text-xl font-black text-navy-deep group-hover:text-gold transition-colors duration-500 leading-tight">
-                    {dept.name}
-                  </h3>
-                </div>
-
-                <div className="flex justify-between items-end pt-6 border-t border-navy-deep/5 group-hover:border-gold/30 transition-colors">
-                  <div className="flex flex-col">
-                    <span className="text-[9px] font-sans uppercase tracking-[0.2em] text-navy-deep/30 group-hover:text-navy-deep/50 transition-colors mb-1 font-bold">Programs</span>
-                    <span className="text-[11px] font-bold text-navy-deep/60 group-hover:text-navy-deep transition-colors tracking-wide">{dept.programs}</span>
+                  <div>
+                    <div className="font-sans text-[10px] text-navy-deep/40 uppercase tracking-[0.3em] font-bold mb-2">{dept.code}</div>
+                    <h3 className="font-sans text-xl font-black text-navy-deep group-hover:text-gold transition-colors duration-500 leading-tight">
+                      {dept.name}
+                    </h3>
                   </div>
-                  <span className="font-sans text-[9px] text-navy-deep/30 group-hover:text-gold/80 transition-colors font-bold tracking-[0.2em]">EST. {dept.est}</span>
+
+                  <div className="flex justify-between items-end pt-6 border-t border-navy-deep/5 group-hover:border-gold/30 transition-colors mt-auto">
+                    <div className="flex flex-col">
+                      <span className="text-[9px] font-sans uppercase tracking-[0.2em] text-navy-deep/30 group-hover:text-navy-deep/50 transition-colors mb-1 font-bold">Programs</span>
+                      <span className="text-[11px] font-bold text-navy-deep/60 group-hover:text-navy-deep transition-colors tracking-wide">{dept.programs}</span>
+                    </div>
+                    <span className="font-sans text-[9px] text-navy-deep/30 group-hover:text-gold/80 transition-colors font-bold tracking-[0.2em]">EST. {dept.est}</span>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </Link>
           ))}
 
           {/* More Departments Card */}

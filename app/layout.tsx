@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, JetBrains_Mono } from 'next/font/google';
+import { Inter, JetBrains_Mono, Playfair_Display } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({
@@ -12,6 +12,11 @@ const jetbrainsMono = JetBrains_Mono({
   variable: '--font-mono',
 });
 
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+});
+
 export const metadata: Metadata = {
   title: 'B.M.S. College of Engineering | Bengaluru',
   description: "India's first private engineering college, founded in 1946.",
@@ -19,8 +24,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="font-serif antialiased bg-navy-deep text-text-dark" suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} ${playfair.variable}`}>
+       <body className="font-sans antialiased bg-white text-navy-deep" suppressHydrationWarning>
         {children}
       </body>
     </html>

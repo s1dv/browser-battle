@@ -60,7 +60,7 @@ export default function AboutPage() {
           </div>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
-              <h3 className="font-serif text-3xl text-gold">Principal's Message</h3>
+              <h3 className="font-serif text-3xl text-gold">Principal&apos;s Message</h3>
               <p className="text-cream/80 leading-relaxed font-sans">
                 Our administration works tirelessly to ensure that every student receives world-class education and resources. We are committed to fostering an environment of academic excellence, research, and holistic development.
               </p>

@@ -69,9 +69,9 @@ export default function Testimonials() {
                 key={idx} 
                 className="w-[350px] md:w-[400px] glass-card p-8 flex flex-col relative group transition-transform duration-300 hover:scale-[1.02] border border-navy-deep/5 bg-white/20"
               >
-                <div className="absolute top-6 right-8 text-7xl text-navy-deep opacity-5 font-serif select-none pointer-events-none">"</div>
+                <div className="absolute top-6 right-8 text-7xl text-navy-deep opacity-5 font-serif select-none pointer-events-none">&quot;</div>
                 <p className="text-navy-deep/80 font-sans italic leading-relaxed text-[15px] mb-8 relative z-10 font-medium h-[120px]">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </p>
                 <div className="flex items-center gap-4 mt-auto">
                   <div className="w-14 h-14 relative rounded-full overflow-hidden border-2 border-white shadow-md">

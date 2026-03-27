@@ -49,16 +49,16 @@ export default function Gallery() {
              className="md:col-span-2 md:row-span-2 relative h-[400px] md:h-auto overflow-hidden group rounded-3xl shadow-sm border border-navy-deep/5"
           >
             <Image
-              src="/pj_block.jpg"
-              alt="BMSCE Campus"
+              src="/comp.jpg"
+              alt="Programming Competition"
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-105"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/20 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-10">
               <div className="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                <div className="font-sans text-3xl font-black text-white group-hover:text-gold transition-colors">Main Academic Block</div>
-                <div className="text-xs opacity-80 font-sans uppercase tracking-[0.2em] font-bold mt-2">The heart of BMSCE campus.</div>
+                <div className="font-sans text-3xl font-black text-white group-hover:text-gold transition-colors">Tech Fests & Hackathons</div>
+                <div className="text-xs opacity-80 font-sans uppercase tracking-[0.2em] font-bold mt-2">Pioneering innovation at BMSCE.</div>
               </div>
             </div>
           </motion.div>
@@ -70,8 +70,8 @@ export default function Gallery() {
              className="relative h-[250px] overflow-hidden group rounded-3xl shadow-sm border border-navy-deep/5"
           >
             <Image
-              src="/lab.png"
-              alt="BMSCE Lab"
+              src="/guitar.jpg"
+              alt="Cultural Performance"
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-110"
               referrerPolicy="no-referrer"
@@ -85,8 +85,8 @@ export default function Gallery() {
              className="relative h-[250px] overflow-hidden group rounded-3xl shadow-sm border border-navy-deep/5"
           >
             <Image
-              src="/indoor_stadium.png"
-              alt="BMSCE Students"
+              src="/ball.webp"
+              alt="Sports Life"
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-110"
               referrerPolicy="no-referrer"
@@ -97,16 +97,32 @@ export default function Gallery() {
              whileInView={{ opacity: 1, y: 0 }}
              viewport={{ once: true }}
              transition={{ duration: 0.5, delay: 0.3 }}
-             className="md:col-span-2 relative h-[250px] overflow-hidden group rounded-3xl shadow-sm border border-navy-deep/5"
+             className="md:col-span-1 relative h-[250px] overflow-hidden group rounded-3xl shadow-sm border border-navy-deep/5"
           >
             <Image
-              src="/comp.jpg"
-              alt="BMSCE Event"
+              src="/sids_crush.jpg"
+              alt="Student Connections"
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-110 group-hover:-translate-y-2"
               referrerPolicy="no-referrer"
             />
           </motion.div>
+          <motion.div 
+             initial={{ opacity: 0, y: 20 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             viewport={{ once: true }}
+             transition={{ duration: 0.5, delay: 0.4 }}
+             className="md:col-span-1 relative h-[250px] overflow-hidden group rounded-3xl shadow-sm border border-navy-deep/5"
+          >
+            <Image
+              src="/peanuts.jpg"
+              alt="Campus Friends"
+              fill
+              className="object-cover transition-transform duration-1000 group-hover:scale-110 group-hover:-translate-y-2"
+              referrerPolicy="no-referrer"
+            />
+          </motion.div>
+
         </div>
 
         {/* Activities Strip */}

@@ -30,7 +30,7 @@ export default function PGAdmissionsPage() {
           </div>
           <div className="order-1 md:order-2 space-y-6">
             <h2 className="font-serif text-3xl md:text-5xl font-bold text-navy-deep">Post Graduation</h2>
-            <p className="text-navy-deep/70 leading-relaxed font-sans">Advance your expertise with our specialized Master's programs designed to meet current industry demands and technological advancements.</p>
+            <p className="text-navy-deep/70 leading-relaxed font-sans">Advance your expertise with our specialized Master&apos;s programs designed to meet current industry demands and technological advancements.</p>
             <button className="text-gold font-bold uppercase tracking-widest text-xs flex items-center space-x-2"><span>View PG Specializations</span> <span>→</span></button>
           </div>
         </div>

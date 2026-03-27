@@ -99,7 +99,7 @@ export default function Visionaries() {
             <Quote size={80} className="text-navy-deep/[0.03] absolute top-8 right-8 z-0" />
             <div className="space-y-6 relative z-10 text-center lg:text-left">
               <p className="text-navy-deep/80 text-xl md:text-2xl leading-relaxed italic font-sans font-medium">
-                &ldquo;A nation's real and sustainable growth is possible with technological advancement... The key to meet the demand for such quality engineers remains in providing <span className="text-gold font-black underline decoration-gold/30 underline-offset-4">holistic engineering education</span>.&rdquo;
+                &ldquo;A nation&apos;s real and sustainable growth is possible with technological advancement... The key to meet the demand for such quality engineers remains in providing <span className="text-gold font-black underline decoration-gold/30 underline-offset-4">holistic engineering education</span>.&rdquo;
               </p>
               <p className="text-navy-deep/50 font-sans text-sm leading-relaxed max-w-3xl font-medium">
                 BMSCE has been at the forefront of engineering education for over 75 years, consistently adapting to the changing needs of the industry while maintaining its core values of excellence and innovation.
